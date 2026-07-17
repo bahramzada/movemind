@@ -1,8 +1,6 @@
 # MoveMind
 
-[![CI](../../actions/workflows/ci.yml/badge.svg)](../../actions/workflows/ci.yml)
 ![Node 24](https://img.shields.io/badge/Node.js-24_LTS-5fa04e)
-![MIT License](https://img.shields.io/badge/license-MIT-84dcc6)
 
 A full-stack portfolio project that turns self-play Q-learning into an inspectable, interactive
 experience. MoveMind currently includes Tic-Tac-Toe, while its typed game-plugin architecture is
@@ -32,7 +30,7 @@ and lets you challenge the latest checkpoint—all without sending training data
 - **Internationalized UI:** a typed English/Azerbaijani dictionary, persisted language preference,
   synchronized document locale, and locale-aware number and time formatting.
 - **Evidence-based quality:** deterministic learning tests, API and failure-path integration tests,
-  desktop/mobile E2E coverage, strict linting, type checks, production builds, and least-privilege CI.
+  desktop/mobile E2E coverage, strict linting, type checks, and repeatable production builds.
 
 ## What you can inspect
 
@@ -183,7 +181,7 @@ schema migration, API errors, checkpoint recovery, trainer serialization, sessio
 localization. Playwright verifies the training, replay, checkpoint, challenge, locale, responsive,
 keyboard, and reduced-motion flows in Chromium.
 
-Before opening a pull request, run:
+To run the complete local validation:
 
 ```bash
 npm run check
@@ -198,13 +196,6 @@ npm audit --omit=dev
 - New games require their own meaningful deterministic evaluator.
 - Checkpoints are local files; there is no cloud synchronization.
 - The app is intentionally local-only and has no hosted demo.
-
-## Contributing and security
-
-Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request. Report vulnerabilities through
-the private process in [SECURITY.md](SECURITY.md), not a public issue.
-
-Released under the [MIT License](LICENSE).
 
 ---
 
@@ -239,7 +230,7 @@ kənara çıxmır.
 - **Lokalizasiya:** typed EN/AZ dictionary, yadda saxlanılan dil seçimi, sinxron document locale və
   locale-aware rəqəm və vaxt formatlaması.
 - **Ölçülən keyfiyyət:** deterministik learning testləri, API və failure-path integration testləri,
-  desktop/mobile E2E, sərt lint və type yoxlamaları, production build və least-privilege CI.
+  desktop/mobile E2E, sərt lint və type yoxlamaları və təkrarlana bilən production build.
 
 ## Nələri izləmək mümkündür
 
@@ -392,7 +383,7 @@ serializasiyasını, sessiya müddətini və EN/AZ lokalizasiyanı yoxlayır. Pl
 replay, checkpoint, challenge, dil, responsive görünüş, klaviatura və reduced-motion axınlarını
 yoxlayır.
 
-Pull request açmazdan əvvəl:
+Bütün lokal yoxlamaları işə salmaq üçün:
 
 ```bash
 npm run check
@@ -407,10 +398,3 @@ npm audit --omit=dev
 - Hər yeni oyun özünə uyğun mənalı deterministik evaluator tələb edir.
 - Checkpoint-lər lokal fayllardır; cloud sinxronizasiya yoxdur.
 - Tətbiq qəsdən lokal-only saxlanılıb və hosted demo daxil deyil.
-
-## Töhfə və təhlükəsizlik
-
-Pull request açmazdan əvvəl [CONTRIBUTING.md](CONTRIBUTING.md) faylını oxu. Təhlükəsizlik boşluqlarını
-public issue ilə deyil, [SECURITY.md](SECURITY.md) sənədindəki private proseslə bildir.
-
-Layihə [MIT License](LICENSE) ilə yayımlanır.
