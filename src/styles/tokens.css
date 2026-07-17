@@ -1,0 +1,30 @@
+:root {
+  color: #e8eee9;
+  background: #0b141a;
+  font-family: "Atkinson Hyperlegible Next Variable", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  --basalt: #0b141a;
+  --slate: #12232b;
+  --slate-deep: #0e1d24;
+  --slate-raised: #182d36;
+  --rule: #29404a;
+  --rule-soft: rgba(75, 105, 117, 0.38);
+  --chalk: #e8eee9;
+  --paper: #f0f1e9;
+  --paper-rule: #cfd3ca;
+  --muted: #93a8af;
+  --muted-dim: #6f858e;
+  --mint: #84dcc6;
+  --coral: #ff6b5f;
+  --violet: #a9b3ff;
+  --amber: #e5b967;
+
+  --font-data: "Recursive Variable", monospace;
+  --page-width: 1440px;
+  --page-gutter: clamp(18px, 4.5vw, 72px);
+  --radius-small: 3px;
+  --radius: 8px;
+  --shadow-board: 0 22px 65px rgba(0, 0, 0, 0.3);
+}
